@@ -5,9 +5,6 @@ import {
 } from "./data/ReactNative.js";
 import express from "express";
 import cors from "cors";
-// const express = require("express");
-// const cors = require("cors");
-// const ReactNative = require("./data/ReactNative_data");
 
 const app = express();
 const PORT = 3000;
