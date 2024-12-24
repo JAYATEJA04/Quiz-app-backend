@@ -39,6 +39,8 @@ const quizData = {
   },
 };
 
+const selectedOptions = [];
+
 app.get("/quiz/:language", (req, res) => {
   const { language } = req.params;
 
@@ -53,6 +55,33 @@ app.get("/quiz/:language", (req, res) => {
   };
 
   res.json(allQuestions);
+});
+
+app.post("/quiz/:language/:topic/:questionId/answer", (req, res) => {
+  const { language, topic, questionId } = req.params;
+  const { selectedOption } = req.body;
+
+  if (!quizData[language] || !quizData[language][topic]) {
+    return res
+      .status(404)
+      .json({ message: `Language ${language} or topic ${topic} not found!` });
+  }
+
+  const question = quizData[language][topic].find(
+    (q) => q.id === parseInt(questionId)
+  );
+  if (!question) {
+    return res
+      .status(404)
+      .json({ message: `Question with ID ${questionId} not found!` });
+  }
+
+  selectedOptions.push({ language, topic, questionId, selectedOption });
+  res.json({ message: "Answer submitted successfully!" });
+});
+
+app.get("/selected-options", (req, res) => {
+  res.json(selectedOptions);
 });
 
 app.listen(PORT, () => {
