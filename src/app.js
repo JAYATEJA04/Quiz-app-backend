@@ -13,17 +13,20 @@ app.use(cors());
 app.use(express.json());
 
 let database;
+let mainScreenContentDatabase;
 
 client
   .connect()
   .then(() => {
     database = client.db("Quizzy");
+    mainScreenContentDatabase = client.db("MainScreenContent");
     console.log("Connected to the database");
   })
   .catch((error) => {
     console.log("Error connecting to the database: ", error);
   });
 
+// get request to fetch all questions of all topics of a language
 app.get("/quiz/:language", async (req, res) => {
   const { language } = req.params;
 
@@ -55,6 +58,25 @@ app.get("/quiz/:language", async (req, res) => {
   }
 });
 
+// get request to fetch the main screen content of each topic
+app.get("/:language/main-screen-content", async (req, res) => {
+  const { language } = req.params;
+  console.log(language);
+
+  try {
+    const mainScreenContent = await mainScreenContentDatabase
+      .collection(`${language}MainScreen`)
+      .find({})
+      .toArray();
+    res.json(mainScreenContent);
+    console.log(mainScreenContent.introduction);
+  } catch (error) {
+    console.error("Error fetching data: ", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+});
+
+/* 
 // app.get("/print/reactnative/fundamentals", async (req, res) => {
 //   try {
 //     const fundamentals = await database
@@ -68,7 +90,9 @@ app.get("/quiz/:language", async (req, res) => {
 //     res.status(500).json({ message: "Internal server error" });
 //   }
 // });
+*/
 
+// post request to submit answer to a question
 app.post("/quiz/:language/:topic/:questionId/answer", async (req, res) => {
   const { language, topic, questionId } = req.params;
   const { selectedOption } = req.body;
@@ -101,6 +125,7 @@ app.post("/quiz/:language/:topic/:questionId/answer", async (req, res) => {
   }
 });
 
+// delete request to clear all selected options in between the quiz
 app.delete("/selected-options", async (req, res) => {
   try {
     await database.collection("selectedOptions").deleteMany({});

@@ -26,11 +26,11 @@ import {
   ReactJS_Intermediate_Quiz_Questions,
 } from "./data/ReactJS_Quiz_Questions.js";
 
-import { ReactNativeMainScreenContent } from "./mainscreens/ReactNativeMainScreenContent.js";
-import { ReactJSMainScreenContent } from "./mainscreens/ReactJSMainScreenContent.js";
-import { JavaScriptMainScreenContent } from "./mainscreens/JavaScriptMainScreenContent.js";
-import { JAVAMainScreenContent } from "./mainscreens/JAVAMainScreenContent.js";
-import { TypeScriptMainScreenContent } from "./mainscreens/TypeScriptMainScreenContent.js";
+import ReactNativeMainScreenContent from "./mainscreens/ReactNativeMainScreenContent.json" assert { type: "json" };
+import ReactJSMainScreenContent from "./mainscreens/ReactJSMainScreenContent.json" assert { type: "json" };
+import JavaScriptMainScreenContent from "./mainscreens/JavaScriptMainScreenContent.json" assert { type: "json" };
+import JAVAMainScreenContent from "./mainscreens/JAVAMainScreenContent.json" assert { type: "json" };
+import TypeScriptMainScreenContent from "./mainscreens/TypeScriptMainScreenContent.json" assert { type: "json" };
 
 const uri = connectionString;
 
@@ -117,27 +117,27 @@ const questionsContent = [
 const mainScreenContent = [
   {
     QuizTitle: "React Native",
-    screenName: "ReactNative MainScreen",
+    screenName: "ReactNativeMainScreen",
     content: ReactNativeMainScreenContent,
   },
   {
     QuizTitle: "React JS",
-    screenName: "ReactJS MainScreen",
+    screenName: "ReactJSMainScreen",
     content: ReactJSMainScreenContent,
   },
   {
     QuizTitle: "JavaScript",
-    screenName: "JavaScript MainScreen",
+    screenName: "JavaScriptMainScreen",
     content: JavaScriptMainScreenContent,
   },
   {
     QuizTitle: "TypeScript",
-    screenName: "TypeScript MainScreen",
+    screenName: "TypeScriptMainScreen",
     content: TypeScriptMainScreenContent,
   },
   {
     QuizTitle: "Java",
-    screenName: "JAVA MainScreen",
+    screenName: "JAVAMainScreen",
     content: JAVAMainScreenContent,
   },
 ];
