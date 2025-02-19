@@ -6,7 +6,7 @@
         "level": "Fundamentals",
         "intro": "Start here to learn the essentials of Java, focusing on basic syntax, data types, and object-oriented principles.",
         "QuizButtonText": "Let's get started!",
-        "ScreenName": "JAVA_Fundamentals_Quiz_Question",
+        "ScreenName": "JAVAFundamentalsQuizScreen",
         "topics": [
           {
             "title": "Variables & Data Types",
@@ -34,7 +34,7 @@
         "level": "Intermediate",
         "intro": "Expand your skills by learning about more advanced Java features like collections and multithreading.",
         "QuizButtonText": "Let's gear up!",
-        "ScreenName": "JAVA_Intermediate_Quiz_Question",
+        "ScreenName": "JAVAIntermediateQuizScreen",
         "topics": [
           {
             "title": "Collections Framework",
@@ -62,7 +62,7 @@
         "level": "Advanced",
         "intro": "Master Java’s advanced capabilities for handling large-scale applications and performance optimization.",
         "QuizButtonText": "Let's go!",
-        "ScreenName": "JAVA_Advance_Quiz_Question",
+        "ScreenName": "JAVAAdvancedQuizScreen",
         "topics": [
           {
             "title": "Generics",

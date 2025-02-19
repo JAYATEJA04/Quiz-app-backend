@@ -53,17 +53,17 @@ const questionsContent = [
     questions: ReactNative_Advance_Topics_Quiz_Questions,
   },
   {
-    category: "ReactJS",
+    category: "React",
     level: "Fundamentals",
     questions: ReactJS_Fundamentals_Quiz_Questions,
   },
   {
-    category: "ReactJS",
+    category: "React",
     level: "Intermediate",
     questions: ReactJS_Intermediate_Quiz_Questions,
   },
   {
-    category: "ReactJS",
+    category: "React",
     level: "Advanced",
     questions: ReactJS_Advance_Quiz_Questions,
   },
@@ -98,17 +98,17 @@ const questionsContent = [
     questions: TS_Advance_Quiz_Questions,
   },
   {
-    category: "Java",
+    category: "JAVA",
     level: "Fundamentals",
     questions: JAVA_Fundamentals_Quiz_Questions,
   },
   {
-    category: "Java",
+    category: "JAVA",
     level: "Intermediate",
     questions: JAVA_Intermediate_Quiz_Questions,
   },
   {
-    category: "Java",
+    category: "JAVA",
     level: "Advanced",
     questions: JAVA_Advanced_Quiz_Questions,
   },
@@ -122,7 +122,7 @@ const mainScreenContent = [
   },
   {
     QuizTitle: "React JS",
-    screenName: "ReactJSMainScreen",
+    screenName: "ReactMainScreen",
     content: ReactJSMainScreenContent,
   },
   {

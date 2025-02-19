@@ -6,7 +6,7 @@
         "level": "First Fundamentals",
         "intro": "Start here to learn the essentials of React Native, focusing on building basic components and understanding the core concepts. This stage will get you comfortable with creating simple mobile UIs.",
         "QuizButtonText": "Let's get started!",
-        "ScreenName": "RN_Fundamentals_quiz_question",
+        "ScreenName": "ReactNativeFundamentalsQuizScreen",
         "topics": [
           {
             "title": "Components & JSX",
@@ -34,7 +34,7 @@
         "level": "Gear Up!",
         "intro": "This category will help you expand your knowledge to create more dynamic, interactive, and organized apps. You’ll focus on managing data, navigating between screens, and handling more complex components.",
         "QuizButtonText": "Let's gear up!",
-        "ScreenName": "RN_Intermediate_quiz_question",
+        "ScreenName": "ReactNativeIntermediateQuizScreen",
         "topics": [
           {
             "title": "Navigation",
@@ -62,7 +62,7 @@
         "level": "Full throttle",
         "intro": "At this level, you’ll explore features for building polished, high-performance apps. Expect to work with animations, native modules, and advanced optimization techniques.",
         "QuizButtonText": "Let's go!",
-        "ScreenName": "RN_Advance_quiz_question",
+        "ScreenName": "ReactNativeAdvancedQuizScreen",
         "topics": [
           {
             "title": "Animations",

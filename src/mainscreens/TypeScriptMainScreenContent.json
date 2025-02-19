@@ -6,7 +6,7 @@
         "level": "Fundamentals",
         "intro": "Start here to learn the essentials of TypeScript, focusing on basic types, interfaces, and how TypeScript improves JavaScript.",
         "QuizButtonText": "Let's get started!",
-        "ScreenName": "TS_Fundamentals_Quiz_Question",
+        "ScreenName": "TypeScriptFundamentalsQuizScreen",
         "topics": [
           {
             "title": "Basic Types",
@@ -34,7 +34,7 @@
         "level": "Intermediate",
         "intro": "Enhance your skills by learning about more powerful TypeScript features like generics and type manipulation.",
         "QuizButtonText": "Let's gear up!",
-        "ScreenName": "TS_Intermediate_Quiz_Question",
+        "ScreenName": "TypeScriptIntermediateQuizScreen",
         "topics": [
           {
             "title": "Generics",
@@ -62,7 +62,7 @@
         "level": "Advanced",
         "intro": "Master TypeScript’s advanced features to handle complex projects and ensure robust type safety.",
         "QuizButtonText": "Let's go!",
-        "ScreenName": "TS_Advance_Quiz_Question",
+        "ScreenName": "TypeScriptAdvancedQuizScreen",
         "topics": [
           {
             "title": "Advanced Types",

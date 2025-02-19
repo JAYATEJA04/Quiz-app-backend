@@ -6,7 +6,7 @@
         "level": "Fundamentals",
         "intro": "Start here to learn the essentials of JavaScript, focusing on basic syntax, data types, and core concepts.",
         "QuizButtonText": "Let's get started!",
-        "ScreenName": "JS_Fundamentals_quiz_question",
+        "ScreenName": "JavaScriptFundamentalsQuizScreen",
         "topics": [
           {
             "title": "Variables & Data Types",
@@ -34,7 +34,7 @@
         "level": "Intermediate",
         "intro": "Build on your knowledge by learning about more complex data structures, debugging, and modularity.",
         "QuizButtonText": "Let's gear up!",
-        "ScreenName": "JS_Intermediate_quiz_question",
+        "ScreenName": "JavaScriptIntermediateQuizScreen",
         "topics": [
           {
             "title": "Arrays & Objects",
@@ -62,7 +62,7 @@
         "level": "Advanced",
         "intro": "Tackle advanced concepts like asynchronous programming, closures, and performance optimization.",
         "QuizButtonText": "Let's go!",
-        "ScreenName": "JS_Advance_quiz_question",
+        "ScreenName": "JavaScriptAdvancedQuizScreen",
         "topics": [
           {
             "title": "Promises & Async/Await",

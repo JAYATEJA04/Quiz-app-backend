@@ -6,7 +6,7 @@
         "level": "Fundamentals",
         "intro": "Start here to learn the essentials of ReactJS, focusing on building basic components and understanding the core concepts.",
         "QuizButtonText": "Let's get started!",
-        "ScreenName": "RJS_Fundamentals_quiz_question",
+        "ScreenName": "ReactFundamentalsQuizScreen",
         "topics": [
           {
             "title": "JSX",
@@ -34,7 +34,7 @@
         "level": "Intermediate",
         "intro": "Dive deeper into React’s features, managing more complex applications efficiently.",
         "QuizButtonText": "Let's gear up!",
-        "ScreenName": "RJS_Intermediate_quiz_question",
+        "ScreenName": "ReactIntermediateQuizScreen",
         "topics": [
           {
             "title": "Hooks",
@@ -62,7 +62,7 @@
         "level": "Advanced",
         "intro": "Explore powerful tools and techniques to optimize performance and handle large-scale applications.",
         "QuizButtonText": "Let's go!",
-        "ScreenName": "RJS_Advance_quiz_question",
+        "ScreenName": "ReactAdvancedQuizScreen",
         "topics": [
           {
             "title": "Custom Hooks",
