@@ -1,1 +1,4 @@
 node_modules/
+
+# Ignore MongoDB credentials file
+src/mongodb_cred.js
